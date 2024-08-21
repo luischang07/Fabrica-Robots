@@ -48,7 +48,7 @@ public class Fabrica {
     }
 
     private void crearRobots() {
-        availableRobots[0] = new LinkedList<>(); // Chamis y cableado
+        availableRobots[0] = new LinkedList<Robot>(); // Chamis y cableado
         availableRobots[1] = new LinkedList<>(); // Motor y transmision
         availableRobots[2] = new LinkedList<>(); // Carroceria
         availableRobots[3] = new LinkedList<>(); // Interiores
