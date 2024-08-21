@@ -56,19 +56,19 @@ public class Fabrica {
         availableRobots[5] = new LinkedList<>(); // Pruebas
 
         for (int i = 0; i < ESTACION1R; i++) {
-            availableRobots[0].add(new Robot(00 + i, "Robot " + i + " E1", "robot" + i + ".png"));
-            availableRobots[5].add(new Robot(55 + i, "Robot " + i + " E6", "robot" + i + ".png"));
+            availableRobots[0].add(new Robot(00 + i, "Robot " + i + " E1", Vista.RUTA + "robot" + i + ".png"));
+            availableRobots[5].add(new Robot(55 + i, "Robot " + i + " E6", Vista.RUTA + "robot" + i + ".png"));
         }
         for (int i = 0; i < ESTACION2R; i++) {
-            availableRobots[1].add(new Robot(11 + i, "mRobot " + i + " E2", "robot" + i + ".png"));
+            availableRobots[1].add(new Robot(11 + i, "mRobot " + i + " E2", Vista.RUTA + "robot" + i + ".png"));
         }
         for (int i = 0; i < ESTACION5R; i++) {
-            availableRobots2.add(new Robot(22 + i, "tRobot " + i + " E2", "robot" + (i + 5) + ".png"));
-            availableRobots[4].add(new Robot(44 + i, "Robot " + i + " E5", "robot" + (i + 5) + ".png"));
+            availableRobots2.add(new Robot(22 + i, "tRobot " + i + " E2", Vista.RUTA + "robot" + (i + 5) + ".png"));
+            availableRobots[4].add(new Robot(44 + i, "Robot " + i + " E5", Vista.RUTA + "robot" + (i + 5) + ".png"));
         }
         for (int i = 0; i < ESTACION3R; i++) {
-            availableRobots[2].add(new Robot(21 + i, "Robot " + i + " E3", "robot" + i + ".png"));
-            availableRobots[3].add(new Robot(33 + i, "Robot " + i + " E4", "robot" + i + ".png"));
+            availableRobots[2].add(new Robot(21 + i, "Robot " + i + " E3", Vista.RUTA + "robot" + i + ".png"));
+            availableRobots[3].add(new Robot(33 + i, "Robot " + i + " E4", Vista.RUTA + "robot" + i + ".png"));
         }
     }
 

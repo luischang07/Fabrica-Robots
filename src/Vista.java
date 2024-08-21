@@ -7,7 +7,6 @@
 * Dr. Clemente Gerardo Garcia
 */
 import javax.swing.*;
-//para Diseño
 import com.formdev.flatlaf.FlatClientProperties;
 
 import Rutinas.Rutinas;
@@ -18,6 +17,7 @@ import java.awt.event.ComponentListener;
 
 public class Vista extends JFrame implements ComponentListener {
 
+    final static String RUTA = "img/";
     private JPanel pnlEstaciones;
     private JLabel[] lblEstaciones;
 
@@ -186,13 +186,13 @@ public class Vista extends JFrame implements ComponentListener {
         int w = pnlCarrosRobot.getWidth() / 18;
         int h = (int) (pnlCarrosRobot.getHeight() / app2.ROWS);
 
-        chasis = Rutinas.AjustarImagen("chasis.jpg", w, h);
-        carroceria = Rutinas.AjustarImagen("carroceria.jpg", w, h);
-        interiores = Rutinas.AjustarImagen("interiores.jpg", w, h);
-        llantas = Rutinas.AjustarImagen("llantas.jpg", w, h);
-        prueba = Rutinas.AjustarImagen("pruebas.jpg", w, h);
-        motor = Rutinas.AjustarImagen("motor.jpg", w, h);
-        transmision = Rutinas.AjustarImagen("transmision.jpg", w, h);
+        chasis = Rutinas.AjustarImagen(RUTA + "chasis.jpg", w, h);
+        carroceria = Rutinas.AjustarImagen(RUTA + "carroceria.jpg", w, h);
+        interiores = Rutinas.AjustarImagen(RUTA + "interiores.jpg", w, h);
+        llantas = Rutinas.AjustarImagen(RUTA + "llantas.jpg", w, h);
+        prueba = Rutinas.AjustarImagen(RUTA + "pruebas.jpg", w, h);
+        motor = Rutinas.AjustarImagen(RUTA + "motor.jpg", w, h);
+        transmision = Rutinas.AjustarImagen(RUTA + "transmision.jpg", w, h);
     }
 
     @Override
