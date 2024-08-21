@@ -1,18 +1,25 @@
-## Getting Started
+## Control de Concurrencia
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+La planta ensambladora de autos “NISSON” está construida con N (8-15) líneas de producción que trabajan durante 20 horas los 365 días del año. Cada línea de producción tiene 6 estaciones de trabajo:
 
-## Folder Structure
+1. Chasis y cableado (20 segundos).
+2. Motor-transmisión (6 y 4 segundos).
+3. Carrocería (10 segundos).
+4. Interiores (5 segundos)
+5. Llantas (5 segundos)
+6. Pruebas. (10 segundos)
 
-The workspace contains two folders by default, where:
+La planta ensambladora para realizar el trabajo de manera automática, cuenta con los siguientes robots que atienden las estaciones:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- 5 Robots para la estación 1.
+- 4 Robots para la instalación del motor y 2 para la colocación de la transmisión. El robot que instala el motor termina su trabajo hasta que el robot que instala la transmisión entra en acción.
+- 3 Robots en cada una de las estaciones 3 y 4.
+- 2 Robots para la estación 5.
+- 5 Robots para la estación 6.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Se desea que elabore un programa java que haga uso de hilos para simular la N líneas de producción de la planta ensambladora. El programa debe mostrar el número de automóvil que se está ensamblando e ir indicando la estación donde se encuentre. La producción de automóviles se detendrá cuando haya alcanzado los 1000 autos.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+**Nuevos requisitos.**
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Los robots utilizados en cada estación tienen un número de serie que debe de ser mostrado cuando este trabajando. Por política de seguridad los robots tienen que trabajar lo mas equitativamente.
+La interfaz debe mostrar los autos y robots que están trabajando en cada estación.
