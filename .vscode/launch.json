@@ -1,0 +1,39 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Fabrica",
+      "request": "launch",
+      "mainClass": "Fabrica",
+      "projectName": "LineasProduccion_bd2aaa6"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "LineasProduccion_bd2aaa6"
+    },
+    {
+      "type": "java",
+      "name": "app2",
+      "request": "launch",
+      "mainClass": "app2",
+      "projectName": "LineasProduccion_bd2aaa6"
+    },
+    {
+      "type": "java",
+      "name": "Nisson",
+      "request": "launch",
+      "mainClass": "Nisson",
+      "projectName": "LineasProduccion_bd2aaa6"
+    },
+    {
+      "type": "java",
+      "name": "Run with AppMap",
+      "request": "launch",
+      "mainClass": "",
+      "vmArgs": "-javaagent:${userHome}\\.appmap\\lib\\java\\appmap.jar"
+    }
+  ]
+}
